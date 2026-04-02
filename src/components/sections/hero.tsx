@@ -103,7 +103,7 @@ export default function Hero() {
         <div className="hero-device invisible relative hidden lg:block">
           <div className="relative aspect-[16/11] overflow-hidden rounded-2xl shadow-tinted-lg ring-1 ring-border/30">
             <Image
-              src="/images/hero-workspace.webp"
+              src="/images/hero-workspace.png"
               alt="A coastal workspace with laptop and monitor overlooking the waterfront"
               fill
               priority
