@@ -102,10 +102,10 @@ export function HeroBackground() {
             return (
               <line
                 key={i}
-                x1={200 + r1 * Math.sin(angle)}
-                y1={200 - r1 * Math.cos(angle)}
-                x2={200 + r2 * Math.sin(angle)}
-                y2={200 - r2 * Math.cos(angle)}
+                x1={Math.round((200 + r1 * Math.sin(angle)) * 1000) / 1000}
+                y1={Math.round((200 - r1 * Math.cos(angle)) * 1000) / 1000}
+                x2={Math.round((200 + r2 * Math.sin(angle)) * 1000) / 1000}
+                y2={Math.round((200 - r2 * Math.cos(angle)) * 1000) / 1000}
                 stroke="currentColor"
                 strokeWidth={i % 9 === 0 ? '0.8' : '0.3'}
                 className="text-primary"
