@@ -278,4 +278,5 @@ export const TECH_LOGOS = [
   { name: 'GitHub', src: '/images/tech-logos/github.svg' },
   { name: 'Google', src: '/images/tech-logos/google.svg' },
   { name: 'Squarespace', src: '/images/tech-logos/squarespace.svg' },
+  { name: 'Wix', src: '/images/tech-logos/wix.svg' },
 ] as const
