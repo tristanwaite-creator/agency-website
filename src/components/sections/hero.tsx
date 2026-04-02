@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import gsap from 'gsap'
@@ -18,7 +19,6 @@ export default function Hero() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) {
-        // Immediately show everything
         gsap.set(['.hero-eyebrow', '.hero-headline', '.hero-sub', '.hero-ctas', '.hero-trust', '.hero-micro', '.hero-device'], { autoAlpha: 1 })
         return
       }
@@ -99,50 +99,19 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Portfolio preview — nested device frame */}
+        {/* Hero image */}
         <div className="hero-device invisible relative hidden lg:block">
-          <div className="rounded-[1.5rem] bg-foreground/[0.03] p-2 ring-1 ring-foreground/[0.04]">
-            <div className="relative overflow-hidden rounded-[calc(1.5rem-0.5rem)] bg-card shadow-tinted-lg ring-1 ring-border/50">
-              <div className="flex items-center gap-1.5 border-b border-border/60 px-4 py-2.5">
-                <span className="size-2 rounded-full bg-foreground/10" />
-                <span className="size-2 rounded-full bg-foreground/10" />
-                <span className="size-2 rounded-full bg-foreground/10" />
-                <span className="ml-3 h-4 flex-1 rounded-md bg-muted/40" />
-              </div>
-              <div className="relative aspect-[16/11] bg-gradient-to-br from-background via-white to-secondary/30 p-5">
-                {/* CSS-only website mockup */}
-                <div className="flex h-full flex-col gap-3">
-                  {/* Mock nav bar */}
-                  <div className="flex items-center justify-between">
-                    <div className="h-2.5 w-20 rounded-sm bg-primary/25" />
-                    <div className="flex gap-2">
-                      <div className="h-2 w-10 rounded-sm bg-foreground/10" />
-                      <div className="h-2 w-10 rounded-sm bg-foreground/10" />
-                      <div className="h-2 w-10 rounded-sm bg-foreground/10" />
-                    </div>
-                  </div>
-                  {/* Mock hero area */}
-                  <div className="flex flex-1 items-center gap-4">
-                    <div className="flex-1 space-y-2">
-                      <div className="h-3 w-3/4 rounded-sm bg-foreground/15" />
-                      <div className="h-3 w-1/2 rounded-sm bg-foreground/15" />
-                      <div className="mt-3 h-2 w-full rounded-sm bg-foreground/8" />
-                      <div className="h-2 w-4/5 rounded-sm bg-foreground/8" />
-                      <div className="mt-3 h-5 w-24 rounded-full bg-cta/40" />
-                    </div>
-                    <div className="h-20 w-28 rounded-lg bg-primary/10" />
-                  </div>
-                  {/* Mock cards row */}
-                  <div className="flex gap-2">
-                    <div className="h-12 flex-1 rounded-md bg-primary/[0.06] ring-1 ring-primary/10" />
-                    <div className="h-12 flex-1 rounded-md bg-primary/[0.06] ring-1 ring-primary/10" />
-                    <div className="h-12 flex-1 rounded-md bg-primary/[0.06] ring-1 ring-primary/10" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="relative aspect-[16/11] overflow-hidden rounded-2xl shadow-tinted-lg ring-1 ring-border/30">
+            <Image
+              src="/images/hero-workspace.webp"
+              alt="A coastal workspace with laptop and monitor overlooking the waterfront"
+              fill
+              priority
+              unoptimized
+              className="object-cover object-center"
+            />
           </div>
-          <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-[1.5rem] bg-primary/[0.04]" />
+          <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl bg-primary/[0.04]" />
         </div>
       </div>
     </section>

@@ -266,8 +266,16 @@ export const FAQ_ITEMS = [
 // Tech partner logos for social proof bar
 export const TECH_LOGOS = [
   { name: 'Next.js', src: '/images/tech-logos/nextjs.svg' },
+  { name: 'React', src: '/images/tech-logos/react.svg' },
   { name: 'WordPress', src: '/images/tech-logos/wordpress.svg' },
-  { name: 'Cloudflare', src: '/images/tech-logos/cloudflare.svg' },
-  { name: 'Google', src: '/images/tech-logos/google.svg' },
+  { name: 'Shopify', src: '/images/tech-logos/shopify.svg' },
+  { name: 'Tailwind CSS', src: '/images/tech-logos/tailwindcss.svg' },
+  { name: 'TypeScript', src: '/images/tech-logos/typescript.svg' },
   { name: 'Vercel', src: '/images/tech-logos/vercel.svg' },
+  { name: 'Cloudflare', src: '/images/tech-logos/cloudflare.svg' },
+  { name: 'Stripe', src: '/images/tech-logos/stripe.svg' },
+  { name: 'Figma', src: '/images/tech-logos/figma.svg' },
+  { name: 'GitHub', src: '/images/tech-logos/github.svg' },
+  { name: 'Google', src: '/images/tech-logos/google.svg' },
+  { name: 'Squarespace', src: '/images/tech-logos/squarespace.svg' },
 ] as const

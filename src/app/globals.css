@@ -142,11 +142,11 @@ body::after {
 /* Infinite marquee — CSS only */
 @keyframes marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-25%); }
 }
 
 .animate-marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 /* Accessibility: respect reduced motion preference */

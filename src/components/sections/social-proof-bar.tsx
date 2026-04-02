@@ -8,8 +8,8 @@ const STATS = [
 ]
 
 export function SocialProofBar() {
-  // Double the logos array for seamless infinite scroll
-  const marqueeLogos = [...TECH_LOGOS, ...TECH_LOGOS]
+  // Repeat logos enough times for seamless infinite scroll
+  const marqueeLogos = [...TECH_LOGOS, ...TECH_LOGOS, ...TECH_LOGOS, ...TECH_LOGOS]
 
   return (
     <section className="border-y border-border/40">
