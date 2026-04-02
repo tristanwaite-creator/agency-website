@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# audit/dev screenshots
+*.png
+
+# tool configs
+.agents/
+.claude/
+.windsurf/
+.playwright-mcp/
+skills-lock.json
+lighthouse-report.json
+
+# docs/reference (not source)
+*.docx
+REPO1_Agency_Website_Setup.md
+reference/
